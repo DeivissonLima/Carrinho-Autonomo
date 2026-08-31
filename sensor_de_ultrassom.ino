@@ -14,6 +14,12 @@ void setup(){
   delay(100);
 }
 
+void DisparaPulsoUltrassonico(){
+  digitalWrite(PinTrigger, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(PinTrigger, LOW);
+}
+
 void loop(){
   DisparaPulsoUltrassonico();
   TempEcho = pulseIn(PinEcho, HIGH);
@@ -22,11 +28,4 @@ void loop(){
   Serial.println(" cm");
 
   delay(2000);
-}
-
-void DisparaPulsoUltrassonico(){
-  digitalWrite(PinTrigger, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(PinTrigger, LOW);
-  }
 }
