@@ -13,13 +13,13 @@
 #define IN4 10
 
 // --- Configurações de Movimento ---
-#define VEL_ESQ 200         // Velocidade motor esquerdo para ir RETO
-#define VEL_DIR 230         // Velocidade motor direito para ir RETO
-#define VEL_CURVA 255       // FORÇA MÁXIMA nas curvas para vencer o atrito do chão
+#define VEL_ESQ 200         // Velocidade motor esquerdo
+#define VEL_DIR 230         // Velocidade motor direito
+#define VEL_CURVA 255       // Velocidade de curva
 
 // --- Configurações de Navegação ---
 #define DIST_MINIMA 25      // cm - distância para detectar obstáculo
-#define TEMPO_CURVA 900     // ms - TEMPO AUMENTADO! Ajuste até o carrinho fazer exatos 90°
+#define TEMPO_CURVA 900     // ms - tempo para ajuste do ângulo de rotação
 #define TEMPO_AFASTAMENTO 800 // ms - tempo para ir para o lado e fugir do obstáculo
 #define TEMPO_ULTRAPASSAR 1000 // ms - tempo para ir para frente e passar o obstáculo
 
